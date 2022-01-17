@@ -1,0 +1,152 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(177, 208, 224);
+    animation: gradiant 10s infinite;
+    .header {
+        text-align: center;
+        font-style: italic;
+        color: blanchedalmond;
+        padding-top: 1rem;
+        font-size: 3rem;
+        animation: gText 10s infinite;
+    }
+    section.main-body {
+        max-width: 46em;
+        margin: auto;
+        border-radius: 14px;
+        background: #fff;
+        margin-top: 8rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        .Buttons {
+            padding: 1rem;
+            background: aliceblue;
+            border-radius: 14px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            text-align: center;
+            input[type="text"] {
+                width: 84%;
+                margin-top: 11px;
+                padding: 10px 1px 10px 10px;
+                font-size: 16px;
+                border-radius: 8px;
+                border: 1px solid #e7d6d6;
+                background: seashell;
+            }
+            .buttons-child {
+                margin: 2rem 0px;
+                button.C {
+                    width: 86%;
+                    background: orange;
+                    border: 1px solid #00000029;
+                    padding: 5px;
+                    font-size: 21px;
+                    border-radius: 6px;
+                    transition: all 0.3s;
+                    &:hover {
+                        background: #cf8600;
+                        cursor: pointer;
+                    }
+                }
+                button.Math {
+                    margin: 26px 15px 0px;
+                    padding: 2px 18px 10px;
+                    font-size: 30px;
+                    width: 57px;
+                    font-family: system-ui;
+                    color: royalblue;
+                    background: thistle;
+                    border: none;
+                    border-radius: 10px;
+                    transition: all 0.6s;
+                    &:hover {
+                        background: #d170d1;
+                        color: #0b1a44;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .Solve {
+        width: 39%;
+        h3 {
+            text-align: center;
+            color: #0f0ffb;
+            font-size: 33px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 2.56rem;
+            font-family: monospace;
+            font-style: italic;
+        }
+        p {
+            padding: 1rem;
+            font-family: monospace;
+        }
+    }
+}
+
+@-webkit-keyframes gradiant {
+    0% {
+        background: rgb(177, 208, 224);
+    }
+    25% {
+        background: rgb(105, 152, 171);
+    }
+    50% {
+        background-color: rgb(64, 104, 130);
+    }
+    75% {
+        background: rgb(26, 55, 77);
+    }
+    100% {
+        background: rgb(177, 208, 224);
+    }
+}
+
+@-webkit-keyframes gText {
+    0% {
+        color: #ff9900;
+    }
+    25% {
+        color: #f7b85a;
+    }
+    50% {
+        color: #c9a877;
+    }
+    75% {
+        color: #d3c4ad;
+    }
+    100% {
+        color: #ff9900;
+    }
+}
+
+@media (max-width: 780px) {
+    section {
+        margin: 8rem 1rem 0rem !important;
+    }
+}
+
+@media (max-width: 628px) {
+    h1 {
+        font-size: 2rem;
+    }
+    section {
+        max-width: 30em !important;
+        flex-direction: column;
+        margin-top: 5rem !important;
+        margin-bottom: 1rem !important;
+        button.Math {
+            margin: 26px 5px 0px !important;
+        }
+        .Solve {
+            width: 100%;
+        }
+    }
+}
